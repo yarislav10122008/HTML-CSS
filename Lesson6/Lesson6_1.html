@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*1000б-inline*/
+        /*100б- id*/
+        /*   10б-клас*/
+        /*     1б-тег*/
+        p{
+            color: pink;
+        }
+        p{
+            color: red;
+            /*застосовується ця*/
+        }
+        p.text{
+            color: darkgreen;
+            /*пріорітет*/
+        }
+        p.lorem{
+            color: lightgreen;
+            /*остання застосовується*/
+
+        }
+        
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<p class="text lorem pink">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptatibus?</p>
+</div>
+</body>
+</html>

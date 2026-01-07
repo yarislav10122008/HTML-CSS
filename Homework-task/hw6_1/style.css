@@ -1,0 +1,65 @@
+body{
+    background-color: #129f99;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration {
+    height: 44vh;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+}
+.registration-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfe6e6;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+}
+.registration-header h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+
+}
+.registration form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+input[type='email'],
+input[type='password']{
+    width: 70%;
+    height: 20px;
+    margin:10px;
+    padding: 5px;
+
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+.reg-footer{
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reg{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
