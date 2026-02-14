@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        form sup {
+            color: red;
+        }
+        .form-registration {
+            border: 3px solid #00ff92;
+            width: 35%;
+            min-width: 300px;
+            border-radius: 20px;
+            padding: 40px;
+        }
+        select,
+        textarea {
+            width: 100%;
+            background-color: #00ffff;
+            border: 2px solid #3e2727;
+            border-radius: 4px;
+            color: #3e2727;
+            padding: 8px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form class="form-registration">
+    <label for="name">Введіть своє ім'я</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required><sup>*</sup>
+
+    <label for="email">Введіть свій email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required><sup>*</sup>
+
+    <label for="password">Введіть свій пароль</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password" required><sup>*</sup>
+
+    <label for="age">Введіть свій вік</label>
+    <input type="number" name="age" id="age" min="18" max="100" required><sup>*</sup>
+
+    <label>Додатково</label>
+    <input type="color" name="favcolor">
+    <input type="file" name="file">
+    <input type="date" name="date">
+
+    <label>Стать</label>
+    <label style="font-weight: normal;"><input type="radio" name="gender" value="male"> Жіноча</label>
+    <label style="font-weight: normal;"><input type="radio" name="gender" value="female"> Чоловіча</label>
+
+    <label style="font-weight: normal;">
+        <input type="checkbox" name="newsletter"> Підписатись на новини
+    </label>
+
+    <label for="lorem">Країни</label>
+    <select id="lorem">
+        <option>Оберіть країну</option>
+        <option value="ua">Україна</option>
+        <option value="usa">США</option>
+        <option value="ca">Канада</option>
+    </select>
+
+    <label for="phone">Модель телефону</label>
+    <select id="phone">
+        <optgroup label="Apple">
+            <option value="x">Iphone X</option>
+            <option value="xr">Iphone XR</option>
+        </optgroup>
+        <optgroup label="Samsung">
+            <option value="s21">Galaxy S21</option>
+            <option value="s22">Galaxy S22</option>
+        </optgroup>
+    </select>
+
+    <label for="comment">Коментар</label>
+    <textarea id="comment"></textarea>
+
+    <div class="buttons">
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </div>
+</form>
+
+</body>
+</html>

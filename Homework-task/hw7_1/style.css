@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+p{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 211px;
+    color: black;
+}
+.cards {
+    display: flex;
+    gap:132px;
+}
+.card img {
+    width: 60px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    top: -50px;
+    border: 4px solid;
+    background-color: white;
+    z-index: 1;
+}
+.card {
+    width: 319px;
+    height: 492px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 4px solid;
+    background-color: rgba(217, 217, 217, 0.3);
+    position: relative;
+}
+.card:nth-child(1){
+    border-color: #554C4C;
+    color: #554C4C;
+}
+.card:nth-child(2){
+    border-color: #65856E;
+    color: #65856E;
+
+}
+.card:nth-child(3){
+    border-color: #554C4C;
+    color: #554C4C;
+}
